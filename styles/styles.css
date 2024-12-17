@@ -27,23 +27,42 @@ body {
 
 .section {
     display: flex;
-    padding: 20px 80px;
-    justify-content: center;
+    text-align: center;
 }
 
 .section_items {
-    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    width: 50%;
+    height: calc(100vh - 180px);
+    padding: 20px;
+    background-color: green;
 }
 
-.section_item {
+.section_items .section_item.heading {
+    background-color: red;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+.section_items .section_item.article {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    width: 100%;
+    height: 100%;
 }
 
 .aside {
     display: flex;
-    width: calc(100% - 80px);
     justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: calc(100vh - 180px);
 }
 
 .footer {
