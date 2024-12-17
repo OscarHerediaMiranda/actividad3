@@ -32,7 +32,18 @@ body {
 }
 
 .section_items {
-    
+    width: calc(100% - 80px);
+    justify-content: center;
+}
+
+.section_item {
+    display: flex;
+}
+
+.aside {
+    display: flex;
+    width: calc(100% - 80px);
+    justify-content: center;
 }
 
 .footer {
